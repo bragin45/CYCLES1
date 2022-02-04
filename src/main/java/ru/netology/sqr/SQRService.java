@@ -6,11 +6,10 @@ public class SQRService {
         int count = 0;
 
         for (int i = 10; i <= 99; i++) {
-            if (i * i >= bottomLimit) {
-                if (i * i <= upperLimit) {
+            if (i * i >= bottomLimit && i * i <= upperLimit) {
                     count = count + 1;
                 }
-            }
+
         }
         System.out.println("Количество квадратов чисел, попавших в диапазон: " + count);
         return count;

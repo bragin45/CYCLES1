@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class SQRServiceTest {
 
     @Test
-    void SqrLimit200300() {
+    void shouldSqrLimit200300() {
         SQRService sqrService = new SQRService();
 
         int expected = 3;
@@ -17,7 +17,7 @@ class SQRServiceTest {
     }
 
     @Test
-    void SqrLimit200400() {
+    void shouldSqrLimit200400() {
         SQRService sqrService = new SQRService();
 
         int expected = 6;
